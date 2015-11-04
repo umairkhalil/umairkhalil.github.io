@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Write to Windows event log
-tags: [VB]
+tags: [vb]
 ---
 
 This VBScript accepts three command line parameters:
