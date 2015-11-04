@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<div>
+  <small>{% if page.previous %}<a href="{{ page.previous.url }}">&larr;&nbsp;{{ page.previous.title }}</a>{% endif %} {% if page.next && page.previous %}| {% endif %}{% if page.next %}<a href="{{ page.next.url }}">{{ page.next.title }}&nbsp;&rarr;</a>{% endif %}</small>
+</div>
+
+<hr>
+
+<article>
+  <div class="blog_post">
+    <header>
+      <div id="{{ page.id }}"></div>
+      <h2 class="blog_post_title"><a href="{{ page.url }}" rel="bookmark" title="Permanent Link to {{ page.title }}">{{ page.title }}</a></h2>
+      <p><small><span class="blog_post_date">{{ page.date | date: "%b %d %Y" }}</span> | tags: 
+        <span class="blog_post_categories">{% for tag in page.tags %}{% include tags.html %}{% endfor %}</span>
+      </small></p>
+    </header>
+    <div class="post_prose">
+      {{ content }}
+    </div>
+  </div>
+</article>

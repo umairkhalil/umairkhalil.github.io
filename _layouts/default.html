@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    {% if page.redirect %}<meta http-equiv="refresh" content="0; URL={{ page.redirect }}">
+    {% endif %}<title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.name }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ site.description }}">
+    <meta name="author" content="{{ site.authorname }}">
+    {% if page.noindex %}<meta name="robots" content="noindex">{% endif %}
+
+    <!-- Le styles -->
+    <link href="/css/default.bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="/css/cs.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="/">{{ site.name }}</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li><a href="/"><i class="icon-home icon-white"></i> Home</a></li>
+              <li><a href="/archive/"><i class="icon-calendar icon-white"></i> Archive</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+
+        <div class="span3">
+          <div class="well sidebar-nav">
+            <ul class="nav nav-list">
+              <li class="nav-header">About me</li>
+              <li>
+                <small>
+                  I have been a Software Developer for about {{ site.time | date: "%Y" | minus: 2004 }} years. Contact: umairkhalil (at) gmail (dot) com
+                </small>
+              </li>
+            </ul>
+          </div><!--/.well -->
+          <div class="well sidebar-nav">
+            <ul class="nav nav-list">
+              <li class="nav-header">Recent Posts</li>
+              {% for post in site.posts limit: 5 %}
+              <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+              {% endfor %}
+            </ul>
+          </div><!--/.well -->
+        </div><!--/span-->
+
+        <div class="row visible-phone spacer50"><hr></div>
+
+        <div class="span7">
+          {% if page.redirect %}<h3>Redirecting to <a href="{{ page.redirect }}">{{ page.redirect }}</a> ...</h3>{% endif %}
+          {{ content }}
+        </div><!--/span-->
+
+        <div class="row visible-phone spacer50"><hr></div>
+
+        <div class="span2">
+          <div class="well sidebar-nav">
+            <ul class="nav nav-list">
+              <li class="nav-header">Archives</li>
+                {% assign counter = 0 %}
+                {% for post in site.posts %}
+                  {% assign thisyear = post.date | date: "%Y" %}
+                  {% assign prevyear = post.previous.date | date: "%Y" %}
+                  {% assign counter = counter | plus: 1 %}
+                  {% if thisyear != prevyear %}
+                    <li><a href="/archive/#{{ post.date | date:"%Y" }}">{{ thisyear }} ({{ counter }})</a></li>
+                    {% assign counter = 0 %}
+                  {% endif %}
+                {% endfor %}
+            </ul>
+          </div><!--/.well -->
+          <div class="well sidebar-nav">
+            <ul class="nav nav-list">
+              <li class="nav-header">Tags</li>
+                {% capture tags %}
+                  {% for tag in site.tags %}
+                    {{ tag[0] }}#{{ tag[1].size}}
+                  {% endfor %}
+                {% endcapture %}
+                {% assign sortedtags = tags | split:' ' | sort %}
+                {% for tag in sortedtags %}
+                    {% assign tagitems = tag | split: '#' %}
+                    <li><a href="/tags/#{{ tagitems[0] }}">{{ tagitems[0] }} ({{ tagitems[1] }})</a></li>
+                {% endfor %}
+            </ul>
+          </div><!--/.well -->
+        </div><!--/span-->
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <div class="row">
+            <div class="span8">
+                <p>
+                    Copyright 2000-{{ site.time | date: "%Y" }}
+                    {{ site.authorname}}
+                </p>
+            </div>
+            <div class="span4">
+                <p>
+                    
+                </p>
+            </div>
+        </div>
+      </footer>
+
+    </div><!--/.container-->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/js/jquery.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-41515400-2', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+  </body>
+</html>

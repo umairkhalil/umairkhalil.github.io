@@ -1,0 +1,10 @@
+# Jekyll settings
+permalink: pretty
+markdown: rdiscount
+
+# Blog settings
+name: Umair Khalil
+authorname: Umair Khalil
+description: Personal site of Umair Khalil, software developer.
+url: http://umairkhalil.github.io
+
