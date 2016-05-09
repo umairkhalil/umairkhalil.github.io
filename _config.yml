@@ -1,6 +1,6 @@
 # Jekyll settings
 permalink: pretty
-markdown: rdiscount
+markdown: kramdown
 
 # Blog settings
 name: Umair Khalil
