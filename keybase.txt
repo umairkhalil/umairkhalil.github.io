@@ -1,0 +1,74 @@
+==================================================================
+https://keybase.io/umair
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://umairkhalil.com
+  * I am umair (https://keybase.io/umair) on keybase.
+  * I have a public key with fingerprint CDEC 89B7 5DFB 5FFB D827  F867 B0AF 05A7 66FF 6416
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "010101ff3988ec73c5cfbc42d335de1e916063d346ec55f76a47bff83fdf78bd1fbd0a",
+            "fingerprint": "cdec89b75dfb5ffbd827f867b0af05a766ff6416",
+            "host": "keybase.io",
+            "key_id": "b0af05a766ff6416",
+            "kid": "010101ff3988ec73c5cfbc42d335de1e916063d346ec55f76a47bff83fdf78bd1fbd0a",
+            "uid": "b1a93c3ee87603f20c2bab2f7f64a619",
+            "username": "umair"
+        },
+        "service": {
+            "hostname": "umairkhalil.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1476930069,
+    "expire_in": 157680000,
+    "prev": "71dfcb181e727af05508823ae091946040dbab7a0690c143b81bd0df58614188",
+    "seqno": 31,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.58
+Comment: https://keybase.io/crypto
+
+yMM4AnicrVJ9TJVVGL98FR9T0E3mitx8RWF4uXvPfe/7dSEIA5osCgaROeDu/TgH
+3u4n7/0ARswmWrNc4efdkHCKgUAIt3BRQChBudAoY9PtTkJlCAMEy9oKF53XauuP
+/uycP87O8/x+v+d5fntG14XpokN6eyLa0ZocHzJ+2e/V7YlM2VRHiE65ljDXEVb4
++IE2Gbo9FqsiE2aCBNpFiOI5DkosJdESEiWTUaYoWoYA8oAhGUqmTAyUaBqxjGBi
+RYQ4CsmI5UQZIFEmBUJPIMVRAVWXqjg8WFaSocTxIkvLSKQRxnBGFnEMK5ICImmB
+ZRiEGBNgMLHS6dYYuDlRcEOD4sQx/LE8bu8/8P9z396/6gCBpyQKQo5lSAoZScko
+CqIRsbiqwABeA7qh6hDsEKO9dkFRiXo9gUM+RYKaq9oY/05bKwWbYjNITjvmulSn
+xyk5bThZ6fG4zBrXU+vSwNVQtPwtYxEVh4xtxAQfVN2K00GYAUZKHkXTBSaW4SmS
+ZHg9AWtcigotioagWYYj8dHKQB+WZIGMJBFwALJGVvOPJjnOSAmQ5AFvYkgTKePh
+WAErkRIwUSIHsBkyojkGmADHEdpgVQ4nYaYA7lOowJpupcIheLwqJOpHLpeG60Ki
+dU9EhGr7pYuOivtn66r0cboTHdmP/ErHu6lH89ceHa+deXXmuz+sGx7UXHHXzn3V
+2F/6XE9KWP5P9hV5U8mFvtfuDKf657six8AtQ3n2NVBUYW3J96QVZDQUjd1j8ldr
+9gfS72Qejf/9sD8hPCc1Ka1qT9A2Hbm4ykzkNUk7d3eGNeTOXO1113fTgfNn2hz6
+fQWdv+TM7W/X21sLp8HWp0Buw/xS992HGXdnAz8vgLPk8njCM4bFAGebTDpS/Fld
+Nbf3WXtTZ8fSofAZc27WDdvZ0iLHaWvdupbJ2Im+hMGh5k86nx4dTowJT+h6aVce
+PcsPpqn3YfqpsmHb9s2/Nn4YqBYu3LiOkldiLr3XVvXNp58f8KTP0AM3t3qj2l+P
+D91WolTkbDvxBdo97Wt6I9Ee8+XDpvWrhw/0zIdMvHxPfL6qr3iwoGxHa3/ag4+P
+D705tWVly8W1gxtD+ahz9tZ39oIS+47AlW/fDmbNRi733i88NXTsovN6zCT/wciG
+Du8lECs2tugS32faDOcL2lN61YbY5NLym5nnuEOlY28d/Kgpk6OyjyQ33w6mKT8Y
+xt3lC4v7iudcS2ei08ngKyP9vuEBNDVAzStXc5duZSTtGo86nZ5X3hFs8X+v62oe
+/fEFImLs6zjz9rGhsCJ2ZHIpYurJF6tHby9L2Qu6nms7M9b/Bo710d0xWZWdlo2F
+5Em3Wrb5T4X7vsM=
+=tdZV
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/umair
+
+==================================================================
