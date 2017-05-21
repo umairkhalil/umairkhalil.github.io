@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Run Command Without Console
+title: Run command without console
 tags: [vb]
 ---
 
