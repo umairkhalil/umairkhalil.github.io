@@ -113,7 +113,7 @@ public class Main {
 
 In C#:
 
-```
+```csharp
 using System;
 using System.Collections.Generic;
 
