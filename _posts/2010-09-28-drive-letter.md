@@ -6,7 +6,7 @@ tags: [windows,batch]
 
 To get the current drive letter:
 
-```powershell
+```
 REM The following lines determine the current drive letter
 echo @echo off> volume.bat
 echo set getdrv_=%%3>> volume.bat
@@ -24,7 +24,7 @@ pause
 
 To assign the same drive letter to access files in a usb drive, create a batch file containing:
 
-```powershell
+```
 @echo off
 subst %~d0 V:\
 ```
@@ -37,7 +37,7 @@ Executing this batch should then create a new Drive Letter V containing all the 
 
 before removing the Portable you should run (maybe in a batch?)
 
-```powershell
+```
 subst V: /D
 ```
 

@@ -8,13 +8,13 @@ Go to Power Options in Control Panel and create a power profile called "day_powe
 
 Create a batch file called day_power.bat containing:
 
-```powershell
+```
 %windir%\system32\powercfg.exe /S day_power
 ```
 
 Create a batch file called night_power.bat containing:
 
-```powershell
+```
 %windir%\system32\powercfg.exe /S night_power
 ```
 
