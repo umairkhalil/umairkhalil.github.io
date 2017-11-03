@@ -8,7 +8,7 @@ A console application that pipes output to the Clipboard.
 
 In C++:
 
-```
+```cpp
 #include "stdafx.h"
  
 using namespace std;
@@ -78,7 +78,7 @@ return copyStreamToClipboard (cin);
 
 In C#:
 
-```
+```csharp
 using System;
 using System.Text;
 using System.IO;

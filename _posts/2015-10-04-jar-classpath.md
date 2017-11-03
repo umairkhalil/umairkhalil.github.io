@@ -8,7 +8,7 @@ When running a java program that needs .jar files, you need to add them to the c
 
 Windows batch file:
 
-```bat
+```powershell
 @echo off
 
 REM This file allows you to add multiple jar library files in subfolders to the classpath

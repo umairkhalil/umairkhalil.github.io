@@ -20,7 +20,7 @@ If the passed parameter is non-zero, an error message
 If the passed parameter is zero, an information
 message (Event ID = 4) is written to the Log.
 
-```
+```vb
 Option Explicit
 On Error Resume Next
  

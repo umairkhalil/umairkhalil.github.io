@@ -17,7 +17,6 @@ command3
 In ruby:
 
 ```ruby
-
 input_file = "
 command1 'parameter1'
 command2 'parameter1', 'parameter2'
@@ -44,7 +43,6 @@ DSL.new.instance_eval input_file
 In python:
 
 ```python
-
 input_file = \
 """ command1 parameter1
     command2 parameter1 parameter2
@@ -69,7 +67,6 @@ for line in lines:
 In java:
 
 ```java
-
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
@@ -117,7 +114,6 @@ public class Main {
 In C#:
 
 ```csharp
-
 using System;
 using System.Collections.Generic;
 

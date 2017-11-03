@@ -6,6 +6,6 @@ tags: [vb]
 
 This VBScript allows you to run a command without a console popping open.
 
-```
+```vb
 CreateObject("Wscript.Shell").Run "COMMAND PARAM1 PARAM2", 0, True
 ```
