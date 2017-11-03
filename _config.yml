@@ -1,6 +1,7 @@
 # Jekyll settings
 permalink: pretty
 markdown: kramdown
+highlighter: rouge
 
 # Blog settings
 name: Umair Khalil
