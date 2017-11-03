@@ -83,7 +83,7 @@ public class Main {
                 "command3";
 
         // Using java 8 for lambdas, otherwise use interface and method name
-        Map<String, Command> DSL = new HashMap<String, Command>() {{
+        Map<String, Command> DSL = new HashMap<String, Command>() { {
             put("command1", (String[] parameters) -> {
                     System.out.println(Arrays.toString(parameters));
                 }
@@ -96,7 +96,7 @@ public class Main {
                     System.out.println(Arrays.toString(parameters));
                 }
             );
-        }};
+        } };
 
         String[] lines = input_file_read.split("\n");
         for (String line : lines) {
